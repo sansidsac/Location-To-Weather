@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    display: inline-block; /* Keeps the h1 width according to its content */
+    margin: 0 auto; /* Center the h1 */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 100px;
+    height: 4px;
+    width: 100%;
+    bottom: -4px; /* Adjusts the distance between the h1 text and the line */
+    left: 0;
+    transition: 200ms;
+}
+
+h1:hover::after{
+    width: 0;
+}

@@ -33,18 +33,20 @@ const App = () => {
       });
   };
   return (
-    <>
+    <> 
+      <div className="container">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mt-8 mb-6">
         Location to Weather
       </h1>
+      </div>
       <div className="form flex flex-col sm:flex-row items-center justify-center mb-6">
         <label
           htmlFor="search"
-          className="font-bold text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-0 sm:mr-4">
+          className="font-bold text-black text-xl sm:text-3xl md:text-4xl lg:text-4xl mb-2 sm:mb-0 sm:mr-4">
           Enter Location:
         </label>
         <input
-          className="w-full sm:w-auto px-3 py-2 sm:py-3 text-lg font-bold rounded-lg border focus:outline focus:outline-2 focus:outline-offset-2 bg-white text-gray-700 focus:outline-gray-400 border-gray-300"
+          className="w-full sm:w-auto md:ml-4 px-3 py-2 sm:py-3 text-lg font-bold rounded-lg border focus:outline focus:outline-2 focus:outline-offset-2 bg-white text-gray-700 focus:outline-gray-400 border-gray-300"
           placeholder="London"
           id="search"></input>
         <button
